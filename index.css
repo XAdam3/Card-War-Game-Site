@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background: #DCE35B; 
+    background: -webkit-linear-gradient(to right, #45B649, #DCE35B);
+    background: linear-gradient(to right, #45B649, #DCE35B);
+    font-family: "Exo 2", sans-serif;
+    color: white;
+    
+    
+
+}
+
+#message > h2{
+    margin-top:1.em;
+    margin-bottom:1em;
+    padding: 0;
+    font-weight:700;
+    letter-spacing: 2px;
+     color:#422694;
+  
+}
+
+
+#startgame{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    
+  
+}
+
+.remaining{
+   position: absolute; 
+   margin-top:25px;
+   position: relative;
+   letter-spacing: 2px;
+   color: whitesmoke;
+}
+ 
+#cards-left{
+     margin-top:0;
+    margin-bottom:0;
+    
+    padding: 0;
+}
+
+
+#btn {
+    margin-top:20px;
+    border-radius: 0px 20px 20px 0px; 
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    width: 200px;
+    background-color: #FFF100;
+    cursor: pointer;
+    padding: 1em 2em;
+    border: none;
+    color:#422694;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#cards{
+    margin:0 auto; 
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+    flex-flow:column-reverse;
+    padding: 0;
+    
+    
+    
+}
+
+
+.card-slot {
+    
+    border: .5px solid black;
+    border-radius: 5px;
+    height: 120px;
+    width: calc(120px * 5 / 7);
+    background: gray;
+    margin:2px;
+    max-width: 100%;
+    padding: 0;
+}
+
+
+img.card-slot{
+    width: 100%;
+   
+  
+
+}
+
+#message{
+    color: #422694;
+}
+
+button.draw-card{
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    width: 200px;
+    margin:0 auto ;
+    background-color: #FFF100;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 1em 2em;
+    border: none;
+    color:#422694;
+    max-width: 100%;
+    
+}
+.card-slot:nth-of-type(1) {
+    margin-bottom: 50px;}
+
+ .disabled{
+     background: gray;
+     cursor: not-allowed;
+     border-radius: 20px;
+     padding: 1em 2em;
+    border: none;
+  
+    max-width: 100%;
+    margin:0 auto ;
+    width: 200px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+ }
+ 
+  h2,h4,h5{ margin: 1em;}
+  
+  #playerScore{
+      margin-bottom:.5em;
+      margin-top:-2.5em;
+     color:whitesmoke;
+      letter-spacing: 2px;
+     
+  }
+   
+  #cpuScore{
+      margin-bottom: .5em;
+       color:whitesmoke;
+      letter-spacing: 2px;
+      
+  }
